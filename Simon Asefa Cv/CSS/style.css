@@ -9,19 +9,17 @@ body{
     min-height: 100vh;
     width: 100%;
     background-color: #F9FAFF;
+    overflow: visible;
 }
 
 p{
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;    
-    font-weight: 400;
     color: #828282;
 }
 
 h1,h2,h3{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 40px;
 }
 
 button{
@@ -39,19 +37,29 @@ button:hover{
     border-radius: 5px;
 }
 
-/*--------------------------------Header------------------------------------*/
+/*--------------------------------Header-index.html-----------------------------------*/
 
 #headerBar{
-    text-align: end;
-    gap: 50px;
-    margin: 10px;
-}
-
-#header{
     display: flex;
     flex-direction: row;
-    height: auto;
-    padding: 50px;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+#headerLogo{
+    padding-left: 5%;
+}
+
+#headerButtons{
+    display: flex;
+    gap: 40px;
+    padding-right: 10%;
+}
+
+.hButtons{
+    padding: 20px;
 }
 
 #logoImg{
@@ -59,32 +67,56 @@ button:hover{
     width: auto;
 }
 
-/*--------------------------------Content------------------------------------*/
+
+#header{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 70%;
+    height: auto;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+
+h4{
+    color: #FDC435;
+}
+
+
+
+/*--------------------------------Content-index.html-----------------------------------*/
 #content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
     height: 70%;
+    width: 70%;
     overflow: auto; 
-    gap: 5%;
     padding-bottom: 100px;
+
+}
+#dividerText{
+    text-align: center;
 }
 
 hr{
     width: 100px;
     color: #FDC435;
+    margin-bottom: 5%;
 }
 .projectCard{
     display: flex;
     flex-direction: row;
     background-color: #7090B01A;
-    height: 10%;
-    width: 70%;
+    height: 450px;
+    width: 100%;
     border-radius: 20px;
+    margin-bottom: 5%;
     
 }
 
 .projectCardContent{
+    align-content: center;
     flex: 0 0 50%;
     
 }
@@ -93,6 +125,7 @@ hr{
     box-sizing: border-box;
     padding: 50px;
     text-align: center;
+    font-size: 18px;
     
 }
 
@@ -101,6 +134,12 @@ hr{
     height: 100%;
     object-fit:cover;
     display: block;
+}
+/*--------------------------------Content-contact.html-----------------------------------*/
+
+#fMessage{
+    width: 400px;
+    height: 200px;
 }
 
 /*--------------------------------footer------------------------------------*/
