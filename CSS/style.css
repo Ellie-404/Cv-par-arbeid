@@ -29,16 +29,18 @@ h1,h2,h3{
 
 button{
     background-color: #FDC435;
+    border: 2px solid transparent;
     border-radius: 5px;
-    border:none;
     width: auto;
     padding: 10px;
 }
 
 button:hover{
     background-color: #ffffff;
-    border: 1px solid #FDC435;
     border-radius: 5px;
+    border-color: #FDC435;
+    cursor:pointer;
+    
 }
 
 /*--------------------------------Header-index.html-----------------------------------*/
@@ -163,15 +165,17 @@ hr{
 
 #fName, #fEmail{
     height: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #fSubmit{
-    background-color: #FDC435;
     border-radius: 5px;
     width:20%;
     padding: 3%;
 }
+
+
 
 #inputArea{
     display: flex;
@@ -202,4 +206,9 @@ hr{
     height: 50px;
     width: auto;
     margin: 5px;
+}
+
+#LdIcon{
+    height: 43px;
+    width: auto;
 }
