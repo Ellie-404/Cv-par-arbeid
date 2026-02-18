@@ -130,7 +130,8 @@ hr{
     display: flex;
     flex-direction: row;
     background-color: #7090B01A;
-    height: 450px;
+    height: auto;
+    min-height: 450px;
     width: 100%;
     border-radius: 20px;
     margin-bottom: 5%;
@@ -138,6 +139,7 @@ hr{
 
 .projectCardContent{
     align-content: center;
+    min-width: 0;
     flex: 0 0 50%;
 }
 
@@ -146,6 +148,7 @@ hr{
     padding: 50px;
     text-align: center;
     font-size: 18px;
+    min-width: 0;
 }
 
 .projectImg{
@@ -211,4 +214,103 @@ hr{
 #LdIcon{
     height: 43px;
     width: auto;
+}
+
+
+/* Adjust font size for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    body {
+    font-size: 16px; /* Ideal base font size for mobile */
+    }
+    #headerBar{
+    display: flex;
+    background-color: #FDC435;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    }
+    #header{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    font-size: 16px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+    #headerImg{
+        display:none;
+    }
+    #headerTextBox{
+        width: 100%;
+    }
+    #headerButtons{
+    display: flex;
+    gap: 0px;
+    padding-right: 0px;
+    }
+    #content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 70%;
+    width: 90%;
+    padding-bottom: 100px;
+}
+    .projectCard{
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+        
+    }
+    .projectCardContent{
+    align-content: center;
+    min-width: 0;
+    width: 100% ;
+    }
+    .projectCardText{
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 16px;
+    }
+    .projectImg{
+        display: none;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    #fMessage{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    }
+
+    #fName, #fEmail{
+        height: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #fSubmit{
+        border-radius: 5px;
+        width:20%;
+        padding: 3%;
+    }
+    #inputArea{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-family: 'Nunito', sans-serif;
+        gap: 5px;
+        font-size: 18px;
+    }
+    .page2 #content{
+    font-size: 16px;
+}
 }
